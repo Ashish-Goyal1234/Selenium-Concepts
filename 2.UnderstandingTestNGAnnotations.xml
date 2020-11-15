@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Banking Department" parallel= "tests" thread-count="2">
+	<parameter name="URL" value="www.google.com" />
+	<parameter name="BankName" value="ICICI Bank" />     <!-- This parameters able to access entire script as we have declared paramets inside script. -->
+	<test name="ATM Banking">
+		<parameter name="URL" value="www.google.com" />   <!-- This parameters able to access restricted to test class only as we have declared paramets inside test -->
+		<classes>
+			<class name="atmBanking.creditAmountByATMTest" />
+			<class name="atmBanking.debitAmountByATMTest" />
+		</classes>
+	</test>
+
+	<test name="Core banking">
+		<classes>
+			<class name="coreBanking.creaditAmountByCoreTest" />
+			<class name="coreBanking.debitAmountBycoreTest" />
+		</classes>
+	</test>
+
+	<test name="mobile banking">
+		<classes>
+			<class name="mobileBanking.debitAmountByMobileTest" />
+			<class name="mobileBanking.creditAMountByMobileTest" />
+		</classes>
+	</test>
+</suite>

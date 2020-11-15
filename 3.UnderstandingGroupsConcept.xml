@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Note : 1. This Group concept is used to execute the testcase which are 
+	present in different class, different packages. 2. In short I need to perform 
+	smoke testing. -->
+
+
+<suite name="Banking Department">
+	<groups>
+			<run>
+					<include name = "smoke" />   
+			</run>
+	</groups>
+	<parameter name="URL" value="www.google.com" />
+	<parameter name="BankName" value="ICICI Bank" />     <!-- This parameters able to access entire script as we have declared paramets inside script. -->
+	<test name="ATM Banking">
+	<parameter name="URL" value="www.google.com" />   <!-- This parameters able to access restricted to test class only as we have declared paramets inside test -->
+		<classes>
+			<class name="atmBanking.creditAmountByATMTest" />
+			<class name="atmBanking.debitAmountByATMTest" />
+		</classes>
+	</test>
+
+	<test name="Core banking">
+		<classes>
+			<class name="coreBanking.creaditAmountByCoreTest" />
+			<class name="coreBanking.debitAmountBycoreTest" />
+		</classes>
+	</test>
+
+	<test name="mobile banking">
+		<classes>
+			<class name="mobileBanking.debitAmountByMobileTest" />
+			<class name="mobileBanking.creditAMountByMobileTest" />
+		</classes>
+	</test> 
+</suite>
