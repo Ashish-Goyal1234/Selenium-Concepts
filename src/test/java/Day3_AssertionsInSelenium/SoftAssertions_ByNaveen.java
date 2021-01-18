@@ -14,7 +14,7 @@ public class SoftAssertions_ByNaveen{
    4. Assertion is Introduced by TestNg.
      */
 
-    @Test
+    @Test(priority=1)
     public void SoftAssertmtd(){
         
         System.out.println("open browser");
@@ -28,7 +28,7 @@ public class SoftAssertions_ByNaveen{
         Assert.assertEquals(true, true);
     
         System.out.println("Validate HomePage");
-        // Assert.assertEquals(false, true);   // HardAssertion  , programme terminates abnormally rest of code not executed.
+         //Assert.assertEquals(false, true);   // HardAssertion  , programme terminates abnormally rest of code not executed and next textcase will start.
         softassert.assertEquals(false, true,"Not able to validate homepage"); // Soft Assertion , programme nit terminates abnormally, rest of the code executed.
       
         System.out.println("go to deals Page");
@@ -41,5 +41,11 @@ public class SoftAssertions_ByNaveen{
         softassert.assertEquals(false, true,"Not able to create contact"); // fail 3
         // assertAll() is important other wise our testcase is treated as passed.
         softassert.assertAll();  // This will fail and show all the failed testcases, if we dont write this line our testcases will never show the failed tetscaes.
+    }
+    
+    @Test(priority=2)
+    public void testCase2() {
+       System.out.println("Test Case 2 Started");
+       Assert.assertEquals(true, true);
     }
 }

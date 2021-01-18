@@ -34,8 +34,5 @@ WebDriver driver;
           select.selectByIndex(1);
           select.selectByVisibleText("Audi");
       }
-       
     }
-    
-    
 }

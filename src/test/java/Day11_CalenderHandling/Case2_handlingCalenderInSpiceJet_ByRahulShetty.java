@@ -35,6 +35,5 @@ public class Case2_handlingCalenderInSpiceJet_ByRahulShetty extends BaseClass{
                 break;
             }
         }
-        
     }
 }

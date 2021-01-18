@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14511" started-at="2020-11-12T00:48:38Z" finished-at="2020-11-12T00:48:53Z">
+  <suite name="Default suite" duration-ms="1812" started-at="2021-01-18T05:06:49Z" finished-at="2021-01-18T05:06:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14511" started-at="2020-11-12T00:48:38Z" finished-at="2020-11-12T00:48:53Z">
-      <class name="Day5_DropdownsInSelenium.Case6_SelectMultipleValuesInDropDown">
-        <test-method status="PASS" signature="init()[pri:0, instance:Day5_DropdownsInSelenium.Case6_SelectMultipleValuesInDropDown@5e3a8624]" name="init" is-config="true" duration-ms="7892" started-at="2020-11-12T06:18:38Z" finished-at="2020-11-12T06:18:46Z">
+    <test name="Default test" duration-ms="1812" started-at="2021-01-18T05:06:49Z" finished-at="2021-01-18T05:06:51Z">
+      <class name="database_Testing_Using_MySQL.ConnectMySQL">
+        <test-method status="PASS" signature="testDb()[pri:0, instance:database_Testing_Using_MySQL.ConnectMySQL@29774679]" name="testDb" duration-ms="1772" started-at="2021-01-18T10:36:49Z" finished-at="2021-01-18T10:36:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="slectMultipleDropDownValueTest()[pri:0, instance:Day5_DropdownsInSelenium.Case6_SelectMultipleValuesInDropDown@5e3a8624]" name="slectMultipleDropDownValueTest" duration-ms="6571" started-at="2020-11-12T06:18:46Z" finished-at="2020-11-12T06:18:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- slectMultipleDropDownValueTest -->
-      </class> <!-- Day5_DropdownsInSelenium.Case6_SelectMultipleValuesInDropDown -->
+        </test-method> <!-- testDb -->
+      </class> <!-- database_Testing_Using_MySQL.ConnectMySQL -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

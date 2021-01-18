@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Day1_WebDriverCommands.basicWebDriverCommandsTest">
+      <class name="Day21_Handling_SVG_Images.SVG_Image_Concept">
         <methods>
-          <include name="basicCommandsTest"/>
           <include name="init"/>
+          <include name="verifySVGImagesTest"/>
         </methods>
-      </class> <!-- Day1_WebDriverCommands.basicWebDriverCommandsTest -->
+      </class> <!-- Day21_Handling_SVG_Images.SVG_Image_Concept -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -56,4 +56,3 @@ public class Case1_HandleWindowPopup_ByNaveen extends BaseClass{
 		driver.close();	
 	}
 }
- 	
